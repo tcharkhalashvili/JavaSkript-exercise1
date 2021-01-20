@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaSkript_1</title>
+</head>
+<body>
+    <ol>
+        <li>ვიპოვოთ 3 რიცხვს შორის მაქსიმუმი -</li>
+        <li>შევიყვანოთ რიცხვი და გავიგოთ ლუწია თუ კენტი</li>
+        <li>გვაქვს 4 ნიშნა რიცხვა და უნდა დავთვალოთ ამ რიცხვის ციფრთა ჯამი (სტრინგებად გადაყვანით და სტრინგების გარეშე)</li>
+    </ol>
+<script type="text/javascript">
+// 1 სავარჯიშო
+    let a = Number(prompt("first number"));
+    let b = Number(prompt("second number"));
+    let c = Number(prompt("third number"));
+
+    if ( a === b && a === c ) {
+        console.log('number are equls');
+    }   else if (a > b && a > c) {
+        console.log('max is ' +a);
+    }   else if ( b > a && b > c ){
+        console.log('max is ' +b);
+    }
+        else {
+            console.log('max is ' +c);
+    }
+
+// 2 სავარჯიშო 
+    let d = Number(prompt("enter number"));
+
+    if ( d % 2 === 0){
+        console.log('luwia');
+    }   else{
+        console.log('kentia');
+    }
+// 3 სავარჯიშო სტრინგებით;
+    let E = Number(prompt("number bowl"));
+    let f = E.toString(); 
+    let bowl = Number(f[0])+Number(f[1])+Number(f[2])+Number(f[3]);
+
+    console.log(bowl);
+// 3 სავარჯიშო სტრინგების გარეშე;
+    let item = Number (prompt("enter digit number"));
+    let first = Math.floor(item / 1000 );
+    let second = Math.floor((item / 100) % 10);
+    let third = Math.floor((item /10 ) % 10);
+    let fourth = t % 10;
+    let result = first+second+third+fourth;
+
+    console.log(result);
+
+</script>    
+
+</body>
+</html>
