@@ -47,10 +47,35 @@
     let first = Math.floor(item / 1000 );
     let second = Math.floor((item / 100) % 10);
     let third = Math.floor((item /10 ) % 10);
-    let fourth = t % 10;
+    let fourth = item % 10;
     let result = first+second+third+fourth;
 
     console.log(result);
+
+// --- წუთები გადავიყვანოდ საათებში:
+    let generalNumber = Number(prompt(" Minutes to convert "));
+    let hour = generalNumber / 60;
+    let minutes = generalNumber % 60;
+
+    console.log(Math.floor(hour),minutes);
+
+// --- წუთები გადავიყვანოდ საათებში: Next way; 
+    let general = Number(prompt(" Minutes to convert to hour"));
+    let generalHour =Math.floor(general / 60);
+    let generalMinutes = general % 60;  
+
+    let answer = generalHour + ':'+ generalMinutes;
+
+    console.log(answer);
+
+// --- მასივის სიგრძის გაგება;
+    let masivi = Number (prompt("masivi element"));
+    let arithmeticsSeries = [2, 4, masivi, 6, 8, 10];
+    let arithmeticsSeriesLength = arithmeticsSeries.length;
+
+    console.log(arithmeticsSeries[arithmeticsSeriesLength-1]);
+
+    
 
 </script>    
 
